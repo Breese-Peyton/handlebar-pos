@@ -1,29 +1,36 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 function Login(props) {
-    const [username, setUsername] = useState('');
-    const [password, setPassword] = useState('');
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
 
-    function handleSubmit(e) {
+  function handleSubmit(e) {
     e.preventDefault();
 
     if (!username || !password) {
       alert("Please fill out all fields");
       return;
     }
-    props.onLogin(); 
+
+    props.onSignIn();
   }
 
-    return (
-        <div id="login-page">
-            <h1>Login</h1>
-            <form onSubmit={handleSubmit}>
-                <input value={username} onChange={(e) => setUsername(e.target.value)} type="text" placeholder="Username" />
-                <input value={password} onChange={(e) => setPassword(e.target.value)} type="password" placeholder="Password" />
-                <button type="submit">Login</button>
-            </form>
-        </div>
-    );
+  return (
+    <form onSubmit={handleSubmit}>
+      <input
+        value={username}
+        onChange={(e) => setUsername(e.target.value)}
+        placeholder="Username"
+      />
+      <input
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+        type="password"
+        placeholder="Password"
+      />
+      <button type="submit">Login</button>
+    </form>
+  );
 }
 
 export default Login;
