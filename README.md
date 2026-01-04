@@ -1,16 +1,41 @@
-# React + Vite
+# Handlebar POS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Handlebar is a rental management application built for local operators such as bike shops, beach rental companies, and equipment rental businesses.
 
-Currently, two official plugins are available:
+The goal of Handlebar is to provide a simple, modern alternative to bloated rental software by focusing on the workflows operators use every day: inventory, bookings, and checkout.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Current Status
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+In active development
 
-## Expanding the ESLint configuration
+- Landing Page built with React
+- Login Flow (started)
+- Core app shell (Dashboard, Inventory, Bookings)
+- Rental assignment and tracking
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This project is being built incrementally with an MVP-first mindset.
+
+---
+
+## Tech Stack
+
+- React
+- Vite
+- JavaScript
+- HTML / CSS
+
+---
+
+## Getting Started
+
+To run this project locally:
+
+```bash
+npm install
+npm run dev
+o + enter
+
+---
+

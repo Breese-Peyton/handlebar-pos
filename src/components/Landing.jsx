@@ -1,15 +1,15 @@
 import Navbar from './Navbar.jsx';
 
-function Landing() {
+function Landing(props) {
     return (
         <>
-            <Navbar />
+            <Navbar onSignIn={props.onSignIn} />
             <main>
                 <section id="hero">
                     <h1>Welcome to Handlebar POS</h1>
                     <p>Simple rental management for local operators</p>
                 </section>
-                
+
                 <section id="built-for">
                     <h2>Built for</h2>
                     <ul>

@@ -1,16 +1,18 @@
 import { useState } from 'react'
 import './App.css'
 import Landing from './components/Landing.jsx'
+import Login from './components/Login.jsx'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const [page, setPage] = useState("landing");
+  if (page === "login") {
+    return <Login onBack={() => setPage("landing")} />;
+  }
   return (
     <div>
-      <Landing />
-      
+      <Landing onSignIn={() => setPage("login")} />
     </div>
-  )
+  );
 }
 
 export default App
