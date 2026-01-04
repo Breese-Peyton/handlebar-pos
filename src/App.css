@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/*Styles for the navigation bar*/
+
+nav {
+  height: 60px;
+  background-color: #f7f5f2;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+#navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+#navbar li {
+  margin: 0 15px;
+}
+
+#navbar h1 {
+  font-size: 24px;
+  color: #333;
+  width: 100%;
+}
+
+/*Styles for Landing Page*/
+
+html,
+body,
+main {
+  width: 100%;
+  background-color: #f7f5f2;
+  margin: 0;
+  padding: 0;
+}
+
+/*Styles for Hero Section*/
+
+#hero {
+  position: relative;
+  top: 60px;
+  width: 100%;
+  padding: 0;
+  background-color: #f7f5f2;
+  color: #333;
+}
+
+#hero h1 {
+  font-size: 48px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#hero p {
+  font-size: 24px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/*Styles for Built for Section*/
+#built-for {
+  color: #333;
+  position: relative;
+  top: 60px;
+}
+
+#built-for h2 {
+  font-size: 36px;
+  text-align: center;
+}
+
+#built-for ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/*Styles for Features Section*/
+#features {
+  color: #333;
+  position: relative;
+  top: 60px;
+
+}
+#features h2 {
+  font-size: 36px;
+  text-align: center;
+}
+
+#features ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
