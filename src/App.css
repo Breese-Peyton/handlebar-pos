@@ -3,7 +3,7 @@
   font-family: 'Arial', sans-serif;
 }
 
-/*Styles for the navigation bar*/
+/*Styles for the navigation bars*/
 
 nav {
   height: 60px;
@@ -16,7 +16,8 @@ nav {
   border-bottom: 1px solid #e0e0e0;
 }
 
-#navbar ul {
+#publicnavbar ul, 
+#appnavbar ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -27,14 +28,22 @@ nav {
   justify-content: flex-end;
 }
 
-#navbar li {
+#publicnavbar li,
+#appnavbar li {
   margin: 0 15px;
 }
 
-#navbar h1 {
+#appnavbar h1,
+#publicnavbar h1 {
   font-size: 24px;
   color: #333;
   width: 100%;
+}
+
+#publicnavbar li:hover,
+#appnavbar li:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 /*Styles for Landing Page*/
@@ -118,5 +127,13 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #333;
+}
+
+/*Styles for Appshell*/
+
+ .App-page {
+  position: relative;
+  top: 60px;
   color: #333;
 }

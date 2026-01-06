@@ -10,9 +10,9 @@ The goal of Handlebar is to provide a simple, modern alternative to bloated rent
 
 In active development
 
-- Landing Page built with React
-- Login Flow (started)
-- Core app shell (Dashboard, Inventory, Bookings)
+- Landing Page v1 built with React
+- Login Flow v1 built
+- Core app shell v1 (Dashboard, Inventory, Bookings) (in progress)
 - Rental assignment and tracking
 
 This project is being built incrementally with an MVP-first mindset.

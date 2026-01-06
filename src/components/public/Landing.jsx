@@ -1,4 +1,4 @@
-import Navbar from './Navbar.jsx';
+import Navbar from './PublicNavbar.jsx';
 
 function Landing(props) {
     return (

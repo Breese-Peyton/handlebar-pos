@@ -1,7 +1,7 @@
 import { useState } from "react";
-import Landing from "./components/Landing";
-import Login from "./components/Login";
-import Dashboard from "./components/Dashboard";
+import Landing from "./components/public/Landing";
+import Login from "./components/public/Login";
+import AppShell from "./components/app/AppShell";
 
 function App() {
   const [page, setPage] = useState("landing");
@@ -13,16 +13,15 @@ function App() {
     return (
       <Login
         onBack={() => setPage("landing")}
-        onSignIn={() => setPage("dashboard")}
+        onSignIn={() => setPage("appshell")}
       />
     );
   }
 
-  if (page === "dashboard") {
-    return <Dashboard onLogout={() => setPage("landing")} />;
+  if (page === "appshell") {
+    return <AppShell onLogout={() => setPage("landing")} />;
   }
 
-  return null;
 }
 
 export default App;

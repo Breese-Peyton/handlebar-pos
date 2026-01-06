@@ -1,8 +1,8 @@
-import handlebarLogo from '../assets/handlebar-logo-bg.svg';
+import handlebarLogo from '../../assets/handlebar-logo-bg.svg';
 
-function Navbar(props) {
+function PublicNavbar(props) {
     return (
-        <nav id="navbar">
+        <nav id="publicnavbar">
             <img src={handlebarLogo} alt="Handlebar POS logo" />
             <h1>Handlebar POS</h1>
             <ul>
@@ -16,4 +16,4 @@ function Navbar(props) {
     );
 }
 
-export default Navbar;
+export default PublicNavbar;
